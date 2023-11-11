@@ -20,6 +20,6 @@ Route::get('client', function () {
 });
 
 
-Route::middleware(['auth','is_admin'])->prefix('admin')->group(function(){
+Route::middleware(['auth','verified','is_admin'])->prefix('admin')->group(function(){
     Route::get('dashboard',[DashboardController::class,'index'])->name('dashboard');
 });

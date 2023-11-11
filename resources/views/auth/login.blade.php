@@ -21,11 +21,12 @@
                 <input class="focus:outline-none"  type="checkbox" id="remember">
                 <label class="text-lg ml-2 cursor-pointer" for="remember">Remember me</label>
             </div>
-            <div  class="flex items-center justify-center bg-[#1c2434] px-4 py-3 mt-5 rounded-lg">
+            <div  class="flex items-center justify-center bg-[#1c2434] px-4 py-3 mt-5 mb-3 rounded-lg">
                 <button class="flex items-center text-white font-bold text-lg" type="submit">Continue
                     <span><img src="https://api.iconify.design/formkit:arrowright.svg?color=%236b707b" width="20px"></span>
                 </button>
             </div>
+            <span class="flex items-center justify-center"><a class="underline text-red-500 " href="{{ route('forgot.password') }}">Forgot Password?</a></span>
             <p class="mt-5 mb-9 text-xl font-semibold text-[#cdcdcd]">Don't have an account?<a class="text-[#2d333d]" href="{{ route('signup') }}"> Create an account</a></p>
             <div class="flex items-center justify-center">
                 <img src="https://eezepc.com/wp-content/uploads/2023/07/eezepc-logo-1.jpg" width="150px" alt="Ezepc Image">
